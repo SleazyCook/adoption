@@ -3,17 +3,16 @@
 
   &__videos {
     grid-column: full-start / col-end 4;
-
-    @media only screen and (max-width: $bp-small) {
-      grid-column: 1 / -1;
-    }
-
     background-color: $color-green-2;
     background-color: $color-primary;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+    }
 
     & video {
       width: 100%;

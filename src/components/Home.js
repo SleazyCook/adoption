@@ -228,7 +228,7 @@ function Home() {
             <div className="pet__detail pet__detail--3">
               <AiOutlineCalendar /> 14 mo</div>
             <div className="pet__detail pet__detail--4">
-              <AiOutlineHeart /> Playing
+              <AiOutlineHeart /> Cat Nip
             </div>
             <button className="pet__button">Adopt me</button>
           </div>
