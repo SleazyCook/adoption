@@ -41,5 +41,17 @@
   line-height: 4rem;
   color: $color-text-dark;
   font-family: $font-header;
-  font-weight: 400;  
+  font-weight: 400;
+  
+  &--feature {
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &--story {
+    color: $color-white;
+  }
+}
+
+.heading-4 {
+
 }
