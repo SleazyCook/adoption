@@ -221,12 +221,18 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; }
+    @media only screen and (max-width: 37.5em) {
+      .story__videos {
+        grid-column: 1 / -1; } }
     .story__videos video {
       width: 100%; }
   .story__content {
     grid-column: col-start 5 / full-end;
     background-color: #bab4ae;
     padding: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .story__content {
+        grid-column: 1 / -1; } }
   .story__text {
     text-align: center;
     font-size: 3rem;
