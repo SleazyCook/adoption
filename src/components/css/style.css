@@ -159,6 +159,7 @@ body {
 
 .pet {
   background-color: #bab4ae;
+  color: #2c2627;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, min-content);
@@ -174,48 +175,67 @@ body {
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    cursor: default;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #058ED9;
+    color: #F4EBD9;
+    transform: translateY(-2rem); }
   .pet__detail {
     font-size: 1.6rem;
-    padding: 1rem; }
+    padding: 2rem 1rem;
+    cursor: default; }
     .pet__detail--1 {
       grid-row: 3;
       grid-column: 1 / 3; }
     .pet__detail--2 {
-      grid-row: 4; }
+      grid-row: 3;
+      grid-column: 2; }
     .pet__detail--3 {
+      grid-row: 4; }
+    .pet__detail--4 {
       grid-row: 4; }
   .pet__button {
     grid-row: 5;
-    grid-column: 1 / 3; }
+    grid-column: 1 / 3;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+    border: none;
+    background-color: #5FAD56;
+    color: #F4EBD9;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    cursor: pointer;
+    transition: all .25s; }
+    .pet__button:hover {
+      background-color: #4b8c44; }
 
-.story__videos {
-  grid-column: full-start / col-end 4;
-  background-color: #4b8c44;
-  background-color: #058ED9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
-  .story__videos video {
-    width: 100%; }
-
-.story__content {
-  grid-column: col-start 5 / full-end;
-  background-color: #bab4ae;
-  padding: 2rem; }
-
-.story__text {
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Nothing You Could Do", cursive;
-  color: #F4EBD9; }
-
-.story__img {
-  border-radius: 50%;
-  margin: auto;
-  border: 5px solid #F4EBD9;
-  display: block; }
+.story {
+  color: #2c2627; }
+  .story__videos {
+    grid-column: full-start / col-end 4;
+    background-color: #4b8c44;
+    background-color: #058ED9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+    .story__videos video {
+      width: 100%; }
+  .story__content {
+    grid-column: col-start 5 / full-end;
+    background-color: #bab4ae;
+    padding: 2rem; }
+  .story__text {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Nothing You Could Do", cursive; }
+  .story__img {
+    border-radius: 50%;
+    margin: auto;
+    border: 5px solid #F4EBD9;
+    display: block; }
 
 .home {
   margin: 0;

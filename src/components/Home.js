@@ -5,12 +5,21 @@ import { MdMedicalServices, MdFamilyRestroom, MdVolunteerActivism } from 'react-
 import { FaHandsHelping, FaHome } from 'react-icons/fa'
 import { BsBriefcaseFill } from 'react-icons/bs'
 import { TbWeight } from 'react-icons/tb'
-import { AiOutlineCalendar } from 'react-icons/ai'
+import { AiOutlineCalendar, AiOutlineHeart } from 'react-icons/ai'
 import { TbPaw } from 'react-icons/tb'
 
 import VideoEdit from './img/video-edit.mp4'
 import Dog02 from './img/dog-02.png'
 import Dog03 from './img/dog-03.jpg'
+import Dog04 from './img/dog-04.jpeg'
+import Dog05 from './img/dog-05.jpg'
+import Dog06 from './img/dog-06.jpg'
+import Dog07 from './img/dog-07.webp'
+import Dog08 from './img/dog-08.jpg'
+import Dog09 from './img/dog-09.jpg'
+import Dog10 from './img/dog-10.jpg'
+import Cat01 from './img/cat-01.jpg'
+import Cat02 from './img/cat-02.webp'
 
 function Home() {
   return (
@@ -97,45 +106,148 @@ function Home() {
       </div>
 
       <section className="pets">
+
         <div className="pet">
           <img className="pet__image" src={Dog03}/>
           <div className="pet__name">
-            Skittles</div>
+            Prince</div>
             <div className="pet__detail pet__detail--1">
-              <TbPaw />Chihuahua</div>
+              <TbPaw /> Pug</div>
             <div className="pet__detail pet__detail--2">
-              <TbWeight /> 7 lbs</div>
+              <TbWeight /> 10 lbs</div>
             <div className="pet__detail pet__detail--3">
-              <AiOutlineCalendar /> 18 mo</div>
+              <AiOutlineCalendar /> 10 mo</div>
+              <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Being held</div>
               <button className="pet__button">Adopt me</button>
           </div>
 
           <div className="pet">
-          <img className="pet__image" src={Dog03}/>
-          <div className="pet__name">
-            Skittles</div>
+            <img className="pet__image" src={Dog04}/>
+            <div className="pet__name">Scooby
+            </div>
             <div className="pet__detail pet__detail--1">
-              <TbPaw />Chihuahua</div>
+              <TbPaw /> Lab</div>
             <div className="pet__detail pet__detail--2">
-              <TbWeight /> 7 lbs</div>
+              <TbWeight /> 15 lbs</div>
             <div className="pet__detail pet__detail--3">
-              <AiOutlineCalendar /> 18 mo</div>
-              <button className="pet__button">Adopt me</button>
-          </div>
-
-          <div className="pet">
-          <img className="pet__image" src={Dog03}/>
-          <div className="pet__name">
-            Skittles</div>
-            <div className="pet__detail pet__detail--1">
-              <TbPaw />Pug</div>
-            <div className="pet__detail pet__detail--2">
-              <TbWeight /> 7 lbs</div>
-            <div className="pet__detail pet__detail--3">
-              <AiOutlineCalendar /> 18 mo</div>
+              <AiOutlineCalendar /> 12 mo</div>
+              <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Naps</div>
             <button className="pet__button">Adopt me</button>
           </div>
 
+          <div className="pet">
+            <img className="pet__image" src={Dog05}/>
+            <div className="pet__name">
+            Zeus</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> Chow Chow</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 50 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 20 mo</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Neck rubs
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
+
+          <div className="pet">
+            <img className="pet__image" src={Dog06}/>
+            <div className="pet__name">
+            Trinket</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> Poodle</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 25 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 18 mo</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Hugs
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
+
+          <div className="pet">
+            <img className="pet__image" src={Dog07}/>
+            <div className="pet__name">
+            Bosco</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> Beagle</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 12 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 10 mo</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Toys
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
+
+          <div className="pet">
+            <img className="pet__image" src={Cat01}/>
+            <div className="pet__name">
+            Lawrence</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> Norwegian</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 9 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 16 mo</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Bird Watching
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
+
+          <div className="pet">
+            <img className="pet__image" src={Dog08}/>
+            <div className="pet__name">
+            Fergie</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> French Bulldog</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 10 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 8 mo</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Playing
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
+
+          <div className="pet">
+            <img className="pet__image" src={Cat02}/>
+            <div className="pet__name">
+            Newman</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> Manx</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 7 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 14 mo</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Playing
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
+
+          <div className="pet">
+            <img className="pet__image" src={Dog10}/>
+            <div className="pet__name">
+            Daisy</div>
+            <div className="pet__detail pet__detail--1">
+              <TbPaw /> Husky</div>
+            <div className="pet__detail pet__detail--2">
+              <TbWeight /> 38 lbs</div>
+            <div className="pet__detail pet__detail--3">
+              <AiOutlineCalendar /> 2 years</div>
+            <div className="pet__detail pet__detail--4">
+              <AiOutlineHeart /> Walks
+            </div>
+            <button className="pet__button">Adopt me</button>
+          </div>
 
       </section>
 

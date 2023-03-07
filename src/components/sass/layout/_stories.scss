@@ -1,4 +1,5 @@
 .story {
+  color: $color-text-dark;
 
   &__videos {
     grid-column: full-start / col-end 4;
@@ -24,7 +25,7 @@
     text-align: center;
     font-size: 3rem;
     font-family: $font-script;
-    color: $color-white;
+    // color: $color-white;
   }
 
   &__img {
