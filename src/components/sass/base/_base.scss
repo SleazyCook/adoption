@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+
+  // @media only screen and (max-width: $bp-large) {
+  //     font-size: 50%;
+  // }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: darken(#0f054c, 10);
+    background-color: $color-white;
+    color: black;
+
+
+}
+
+.app-return {
+  // display: grid;
+
+  // grid-template-rows: [top-start] 14vh [top-end main-start] max-content [main-end foot-start] 30vh [foot-end];
+  // grid-template-columns: 100vw;
+}

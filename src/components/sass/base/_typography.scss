@@ -1,0 +1,45 @@
+.body {
+  font-size: 1.6rem;
+  font-family: $font-default;
+}
+
+.heading-primary {
+  font-family: $font-logo;
+  font-weight: 400;
+  color: $color-white;
+
+  text-align: center;
+
+  &--main {
+    font-size: 5rem;
+    display: block;
+    cursor: default;
+    letter-spacing: .5rem;
+  }
+
+  // &--sub {
+  //   font-size: 3rem;
+  //   letter-spacing: .5rem;
+  //   border-top: 2px solid darken($color-white, 10);
+  // }
+}
+
+.heading-2 {
+  padding: 0;
+  margin: 0;
+  font-family: $font-header;
+  font-size: 4rem;
+  font-weight: 300;
+  color: $color-white;
+  letter-spacing: .15rem;
+  cursor: default;
+  text-transform: lowercase;
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: $color-text-dark;
+  font-family: $font-header;
+  font-weight: 400;  
+}

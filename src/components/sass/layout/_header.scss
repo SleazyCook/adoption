@@ -1,0 +1,56 @@
+.header-main {
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-primary-light, 0.7), 
+    rgba($color-primary-dark, 0.7)), 
+    url("../img/dog-01.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  padding: 8rem;
+  padding-top: 4rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content min-content .7fr;
+  grid-template-columns: minmax(6rem, 70%);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
+
+  &__textbox{
+    // border: 2px solid white;
+    text-align: center;
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: $color-white; 
+  }
+
+  &__icon {
+    font-size: 5rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}

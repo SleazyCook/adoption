@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+// FONTS
+$font-logo: 'Lemon', cursive;
+$font-header: 'Public Sans', sans-serif;
+$font-default: 'Lato', sans-serif;
+
+
+// COLORS
+
+//celestial blue
+$color-primary: #058ED9;
+$color-primary-light: lighten(#058ED9, 15);
+$color-primary-dark: darken(#058ED9, 20);
+
+$color-green-1: darken(#5FAD56, 5);
+$color-green-2: darken(#5FAD56, 10);
+$color-green-3: darken(#5FAD56, 20);
+
+// umber
+$color-secondary: #77685D;
+$color-secondary-light: lighten(#77685D, 15#);
+$color-secondary-dark: darken(#77685D, 10);
+
+// van dyke
+$color-grey-dark-1: lighten(#483D3F, 10);
+$color-grey-dark-2: #483D3F;
+$color-grey-dark-3: darken(#483D3F, 10);
+
+// battleship grey
+$color-grey-light-1: lighten(#A39A92, 10);
+$color-grey-light-2: #A39A92;
+$color-grey-light-3: darken(#A39A92, 10);
+
+// eggshell
+$color-white: #F4EBD9;
+$color-black: #000;
+$color-text-dark: $color-grey-dark-3;
+
+// Breakpoints for Media Queries
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;

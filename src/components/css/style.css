@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  html::-webkit-scrollbar {
+    display: none; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #06021c;
+  background-color: #F4EBD9;
+  color: black; }
+
+.body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif; }
+
+.heading-primary {
+  font-family: "Lemon", cursive;
+  font-weight: 400;
+  color: #F4EBD9;
+  text-align: center; }
+  .heading-primary--main {
+    font-size: 5rem;
+    display: block;
+    cursor: default;
+    letter-spacing: .5rem; }
+
+.heading-2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #F4EBD9;
+  letter-spacing: .15rem;
+  cursor: default;
+  text-transform: lowercase; }
+
+.heading-3 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: #2c2627;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400; }
+
+.btn {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: lowercase; }
+  .btn--header-main {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #F4EBD9;
+    background-color: #5a4f47;
+    background-color: #05c286;
+    width: max-content;
+    text-align: center;
+    transition: all .2s; }
+    .btn--header-main:hover {
+      background-color: #77685D;
+      background-color: #037853; }
+
+.features {
+  grid-column: center-start / center-end;
+  margin: 7.5rem 0;
+  background-color: #F4EBD9; }
+  @supports (display: grid) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 6rem;
+      align-items: start; } }
+
+.feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content max-content;
+  grid-column-gap: 2.5rem; }
+  @supports (display: grid) {
+    .feature {
+      width: auto;
+      margin-bottom: 0; } }
+  .feature__icon {
+    fill: #058ED9;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(2rem); }
+  .feature__text {
+    font-size: 1.7rem;
+    color: #2c2627;
+    transform: translateY(-1rem); }
+
+.header-main {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to right bottom, rgba(48, 179, 250, 0.7), rgba(3, 77, 117, 0.7)), url("../img/dog-01.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content min-content .7fr;
+  grid-template-columns: minmax(6rem, 70%);
+  grid-row-gap: 1.5rem;
+  justify-content: center; }
+  @media only screen and (max-width: 50em) {
+    .header-main {
+      grid-column: 1 / -1; } }
+  @media only screen and (max-width: 37.5em) {
+    .header-main {
+      padding: 5rem; } }
+  .header-main__textbox {
+    text-align: center;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .header-main__icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #F4EBD9; }
+  .header-main__icon {
+    font-size: 5rem; }
+    .header-main__icon:not(:last-child) {
+      margin-right: 3rem; }
+
+.story__videos {
+  grid-column: full-start / col-end 4;
+  background-color: #05a975;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .story__videos video {
+    width: 100%; }
+
+.story__content {
+  grid-column: col-start 5 / full-end;
+  background-color: #bab4ae; }
+
+.home {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100vw;
+  grid-template-rows: 60vh min-content 60vh min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }

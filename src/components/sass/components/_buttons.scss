@@ -1,0 +1,22 @@
+.btn {
+  font-size: 2rem;
+  // a
+  text-decoration: none;
+  text-transform: lowercase;
+
+  &--header-main {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: $color-white;
+    background-color: $color-secondary-dark;
+    background-color: $color-green-1;
+    width: max-content;
+    text-align: center;
+    transition: all .2s;
+
+    &:hover {
+      background-color: $color-secondary;
+      background-color: $color-green-3;
+    }
+  }
+}
