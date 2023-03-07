@@ -1,0 +1,151 @@
+.contact {
+  background-color: $color-primary;
+
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  
+  padding: 10rem 0;
+
+
+
+  &__form {
+    grid-column: center-start / center-end;
+
+    background-image: linear-gradient(105deg, 
+    rgba($color-grey-light-1, .9) 0%,
+    rgba($color-grey-light-1, .9) 50%,
+    transparent 50%) ,
+    url(../img/dogs.jpg);
+    background-size: cover;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+
+  color: $color-text-dark;
+  font-family: $font-header;
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 2rem;
+  margin-left: 5rem;
+
+  &__group {
+    position: relative;
+  }
+
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: $font-header;
+    color: $color-text-dark;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: lighten($color-grey-light-1, 5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 60%;
+    display: block;
+    transition:all .3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-secondary;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-light-3;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem;
+    // margin-left: 2.5rem;
+    z-index: 1;
+
+    // border: 3px solid black;
+    // color: black;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+      opacity: 1;
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+    border: none;
+    background-color: $color-green-1;
+    color: $color-white;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    cursor: pointer;
+    transition: all .25s;
+
+    &:hover {
+      background-color: $color-green-2;
+    }
+  }
+}

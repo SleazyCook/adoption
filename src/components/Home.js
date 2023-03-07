@@ -99,7 +99,7 @@ function Home() {
       </div>
 
       <div className="story__content">
-        <h3 className="heading-3 heading-3--story">Happy Families</h3>
+        <h3 className="heading-3">Happy Families</h3>
         <p className="story__text">"Our home has been happier ever since he came home with us"</p>
         {/* <button className="btn">Find your pet</button> */}
         <img className="story__img" src={Dog02} />
@@ -249,6 +249,55 @@ function Home() {
             <button className="pet__button">Adopt me</button>
           </div>
 
+      </section>
+
+      <section className="contact">
+          <div className="contact__form">
+            <div className="form">
+              <h3 className="heading-3">Contact</h3>
+              <div className="form__group">
+                <input type="text" className="form__input" required id="name" placeholder="Full name" />
+                <label for="name" className="form__label">Full name</label>
+              </div>
+              <div className="form__group">
+                <input type="email" className="form__input" required id="name" placeholder="Email address" />
+                <label for="name" className="form__label">Email address</label>
+              </div>
+              <div className="form__group">
+                <input type="radio" className="form__radio-input" id="rescue" name="inquiry" />
+                <label className="form__radio-label" for="rescue">
+                  <span className="form__radio-button"></span>
+                  Animal Rescue</label>
+              </div>
+              <div className="form__group">
+                <input type="radio" className="form__radio-input" id="adopt" name="inquiry" />
+                <label className="form__radio-label" for="adopt">
+                  <span className="form__radio-button"></span>
+                  Adoption</label>
+              </div>
+              <div className="form__group">
+                <input type="radio" className="form__radio-input" id="foster" name="inquiry"/>
+                <label className="form__radio-label" for="foster">
+                  <span className="form__radio-button"></span>
+                  Fostering</label>
+              </div>
+              <div className="form__group">
+                <input type="radio" className="form__radio-input" id="volunteer" name="inquiry"/>
+                <label className="form__radio-label" for="volunteer">
+                  <span className="form__radio-button"></span>
+                  Volunteer</label>
+              </div>
+              <div className="form__group">
+                <input type="radio" className="form__radio-input" id="career" name="inquiry"/>
+                <label className="form__radio-label" for="career">
+                  <span className="form__radio-button"></span>
+                  Careers</label>
+              </div>
+              <div className="form-group">
+                <button className="form__btn">Submit</button>
+              </div>
+            </div>
+          </div>
       </section>
 
 
