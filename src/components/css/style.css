@@ -89,7 +89,8 @@ body {
   .contact__form {
     grid-column: center-start / center-end;
     background-image: linear-gradient(105deg, rgba(210, 205, 201, 0.9) 0%, rgba(210, 205, 201, 0.9) 50%, transparent 50%), url(../img/dogs.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     @media only screen and (max-width: 37.5em) {
       .contact__form {
         background-image: linear-gradient(105deg, rgba(210, 205, 201, 0.9) 0%, rgba(210, 205, 201, 0.9) 100%, transparent 50%), url(../img/dogs.jpg); } }
