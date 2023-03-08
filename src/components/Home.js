@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Footer from './Footer'
+
 import { GiSittingDog, GiCat, GiRabbit, GiHorseHead } from 'react-icons/gi'
 import { MdMedicalServices, MdFamilyRestroom, MdVolunteerActivism } from 'react-icons/md'
 import { FaHandsHelping, FaHome } from 'react-icons/fa'
@@ -299,6 +301,8 @@ function Home() {
             </div>
           </div>
       </section>
+
+      <Footer />
 
 
     </div>

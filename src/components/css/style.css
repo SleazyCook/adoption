@@ -277,6 +277,66 @@ body {
     color: #2c2627;
     transform: translateY(-1rem); }
 
+.footer {
+  grid-column: full-start / full-end;
+  grid-row: foot-start / foot-end;
+  padding: 3rem 0;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #77685D;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Lemon", cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F4EBD9; }
+    .footer__logo-box--author {
+      font-family: sans-serif; }
+  .footer__flexbox {
+    display: flex;
+    justify-content: center; }
+  .footer__flexbox-item {
+    display: block;
+    flex: 0 0 50%;
+    padding: 2rem;
+    max-width: 60rem;
+    font-family: "Public Sans", sans-serif; }
+  .footer__navigation {
+    border-top: 1px solid #F4EBD9;
+    padding-top: 1rem;
+    display: block;
+    text-align: center; }
+  .footer__list {
+    list-style: none; }
+  .footer__link:link, .footer__link:visited {
+    font-family: "Public Sans", sans-serif;
+    color: #F4EBD9;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #F4EBD9;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.1); }
+  .footer__copyright {
+    border-top: 1px solid #F4EBD9;
+    padding-top: 1rem;
+    text-align: justify;
+    color: #F4EBD9; }
+
 .header-main {
   grid-column: full-start / full-end;
   background-image: linear-gradient(to right bottom, rgba(48, 179, 250, 0.7), rgba(3, 77, 117, 0.7)), url("../img/dog-01.png");
@@ -350,5 +410,5 @@ body {
   padding: 0;
   display: grid;
   width: 100vw;
-  grid-template-rows: 60vh min-content 60vh min-content 100vh;
+  grid-template-rows: 60vh min-content 60vh min-content min-content min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
