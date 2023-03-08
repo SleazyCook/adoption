@@ -19,6 +19,14 @@
     transparent 50%) ,
     url(../img/dogs.jpg);
     background-size: cover;
+
+    @media only screen and (max-width: $bp-small) {
+      background-image: linear-gradient(105deg, 
+      rgba($color-grey-light-1, .9) 0%,
+      rgba($color-grey-light-1, .9) 100%,
+      transparent 50%) ,
+      url(../img/dogs.jpg);
+    }
   }
 }
 
@@ -34,6 +42,10 @@
   width: 50%;
   margin: 2rem;
   margin-left: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90%;
+  }
 
   &__group {
     position: relative;
@@ -56,6 +68,10 @@
     width: 60%;
     display: block;
     transition:all .3s;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+    }
 
     &:focus {
       outline: none;

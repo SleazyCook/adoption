@@ -90,6 +90,9 @@ body {
     grid-column: center-start / center-end;
     background-image: linear-gradient(105deg, rgba(210, 205, 201, 0.9) 0%, rgba(210, 205, 201, 0.9) 50%, transparent 50%), url(../img/dogs.jpg);
     background-size: cover; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__form {
+        background-image: linear-gradient(105deg, rgba(210, 205, 201, 0.9) 0%, rgba(210, 205, 201, 0.9) 100%, transparent 50%), url(../img/dogs.jpg); } }
 
 .form {
   display: flex;
@@ -102,6 +105,9 @@ body {
   width: 50%;
   margin: 2rem;
   margin-left: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form {
+      width: 90%; } }
   .form__group {
     position: relative; }
   .form__group:not(:last-child) {
@@ -118,6 +124,9 @@ body {
     width: 60%;
     display: block;
     transition: all .3s; }
+    @media only screen and (max-width: 37.5em) {
+      .form__input {
+        width: 80%; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
